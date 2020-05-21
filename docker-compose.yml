@@ -14,8 +14,8 @@ services:
 
   custom-card:
     build:
-      dockerfile: ./custom-card
-      context: ./custom-card
+      context: custom-card
+      dockerfile: Dockerfile
     ports:
       - 5000
     volumes:

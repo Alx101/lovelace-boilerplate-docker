@@ -1,0 +1,22 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "unknown",
+                "data": {},
+                "domain": "demo",
+                "entry_id": "d51fb688917446a5a5ceec5cce27e3e8",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Demo",
+                "unique_id": null,
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

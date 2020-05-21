@@ -1,0 +1,18 @@
+2020-05-21 16:53:29 WARNING (MainThread) [homeassistant.components.lovelace] Resources need to be specified in your configuration.yaml. Please see the docs.
+2020-05-21 16:53:35 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/restore_state.py", line 175, in _async_dump_states
+    await self.async_dump_states()
+  File "/usr/src/homeassistant/homeassistant/helpers/restore_state.py", line 164, in async_dump_states
+    for stored_state in self.async_get_stored_states()
+  File "/usr/src/homeassistant/homeassistant/helpers/storage.py", line 144, in async_save
+    await self._async_handle_write_data()
+  File "/usr/src/homeassistant/homeassistant/helpers/storage.py", line 218, in _async_handle_write_data
+    self._write_data, self.path, data
+  File "/usr/local/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/homeassistant/homeassistant/helpers/storage.py", line 226, in _write_data
+    os.makedirs(os.path.dirname(path))
+  File "/usr/local/lib/python3.7/os.py", line 223, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/config/.storage'

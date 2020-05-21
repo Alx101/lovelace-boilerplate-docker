@@ -21,3 +21,11 @@ This runs `npm install` inside `custom-card` to fetch `node_modules` and runs `d
 to build the image. Then runs `docker-compose up -d` to start the containers.
 
 Enjoy
+
+
+### Makefile commands
+`make` builds and runs project
+
+`make image` builds custom-card Dockerfile
+
+`make start` starts the containers
